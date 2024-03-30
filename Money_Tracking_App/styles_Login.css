@@ -1,0 +1,152 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('moneyBG.jpeg'); /* Change to your background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(17, 18, 3, 0.725);
+    padding: 20px;
+    text-align: center;
+    font-size: 32;
+    color: whitesmoke;
+    align-items: center;/*alignes items vertically*/
+    width: 100%; /* Set the width to cover the entire screen */
+}
+
+.top-section1 {
+    display: flex;
+    color: white;
+    justify-content: space-between; /* Spread items horizontally */
+    justify-items: center;
+    align-items: center;
+    width: 100%; /* Set the width to cover the entire screen */
+}
+/* Style the heading */
+h1 {
+    color: white;
+    margin: 0;
+    text-size-adjust:32  !important;
+    color: aliceblue !important;
+    width: 100%; /* Ensure the h1 element takes up full width */
+    text-align: center; /* Center-align the text within the h1 */
+}
+
+
+.top-section1 a {
+   
+    text-decoration:solid;
+    padding: 3px 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.top-section1 a:hover {
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 32;
+    flex: 1;
+}
+
+/* Style the login container */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Add opacity to the login container if desired */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px; /* Adjust as needed */
+    width: 80%; /* Set the width to 80% of the parent container */
+    text-align: center;
+    margin: 20px auto; /* Center the container horizontally and add some space from the top */
+}
+
+/* Style form elements */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="user-name"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the login button */
+button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 20px; /* Add margin to separate the buttons */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style the "Register" button */
+button.register-button {
+    background-color: #0056b3; /* Change the background color */
+    margin-right: 10px; /* Add margin to separate the buttons */
+}
+
+/* Style the "Forgot Password" link */
+.forgot-password {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+        .submit{
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit:hover {
+            background-color: #0056b3;
+        }

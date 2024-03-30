@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/regestration form</title>
+    <link rel="stylesheet" href="styles_Login.css">
+</head>
+<style>
+    header {
+        justify-self: start;
+        align-self: start;
+        text-align: center; /* Center-align the content of the header */
+        color: aliceblue !important;
+    }
+
+    .top-section1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgb(236, 240, 244) !important;
+    }
+
+    .login-section a {
+        margin-right: 10px;
+    }
+</style>
+
+<body>
+<header>
+        <div class="top-section1">
+            <h1>TRACK-YOUR-MONEY</h1>
+            <div class="login-section">
+                <a href="login.html" class="link">Sign In</a>
+                <a href="login.html" class="link">Contact Us</a>
+                <a href="login.html" class="link">About Us</a>
+                <a href="login.html" class="link">History</a>
+            </div>
+        </div>
+</header>
+<main>
+    <div class="login-container">
+        <h1>REGISTRATION FORM</h1>
+        <form id="login-form" action="/register" method="POST">
+            <div class="form-group">
+                <label for="user-name">User_Name</label>
+                <input type="user-name" id="user-name" name="user-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <button type="submit" onclick="window.location.href = 'success.html';">Register</button>
+        </form>
+        <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+    </div>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Tracking App</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            text-align: center; /* Center-align the content of the header */
+        }
+
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .login-section a {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-section">
+            <h1>TRACK-YOUR-MONEY</h1>
+            <div class="login-section">
+                <a href="login.html" class="link">Sign In</a>
+                <a href="login.html" class="link">Contact Us</a>
+                <a href="login.html" class="link">About Us</a>
+                <a href="login.html" class="link">History</a>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <section class="input-section">
+                <h2>Add Expense</h2>
+                <label for="category-select">Category:</label>
+                <select id="category-select">
+                    <option value="College fees">College fees</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Food">Food</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Drinks">Drinks</option>
+                    <option value="Other">Other</option>
+                </select>
+                <!-- Input field for custom category -->
+                <input type="text" id="other-category-input" placeholder="Enter custom category" style="display: none;">
+                <label for="amount-input">Amount:</label>
+                <input type="number" id="amount-input">
+                <label for="date-input">Date:</label>
+                <input type="date" id="date-input">
+                <button id="add-btn">Add</button>
+            </section>
+
+            <section class="expenses-list">
+                <h2>Expenses List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expense-table-body"></tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Total: <span id="total-amount">0</span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </section>
+        
+        <section class="chart-section">
+            <canvas id="expense-chart" width="400" height="400"></canvas>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
